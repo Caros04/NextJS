@@ -1,4 +1,3 @@
-import Navbar from '@/components/navbar';
 import type { Metadata } from 'next';
 
 import Link from 'next/link';

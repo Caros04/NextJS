@@ -20,7 +20,7 @@ const dummyBlogs = [
 
 export default function BlogsPage() {
     return (
-        <div className="max-w-3xl mx-auto p-6">
+        <div className="max-w-2xl mx-auto p-4">
             <h1 className="text-3xl font-bold mb-4">Daftar Blog</h1>
             <div className="space-y-4">
                 {dummyBlogs.map((blog) => (
@@ -30,6 +30,17 @@ export default function BlogsPage() {
                         desc={blog.desc}
                     />
                 ))}
+                <button className="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600">
+                    Test
+                </button>
+                <div className="flex flex-col md:flex-row justify-between items-center mt-6 gap-4">
+                    <button className="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition">
+                        Lihat Blog
+                    </button>
+                    <button className="bg-gray-600 text-white px-4 py-2 rounded-lg transform hover:scale-105 transition duration-300">
+                        Tambah Blog
+                    </button>
+                </div>
             </div>
         </div>
     );
